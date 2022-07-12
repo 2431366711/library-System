@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.header{
+    background-color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .left{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.header .right{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .right .left .face{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin-right: 6px;
+}
+.header .right .left .face img{
+    height: 50px;
+    width: 50px;
+}
+.header .right .left .words{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.header .right .left .words span{
+    display: inline-block;
+    color: #ccc;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.header .right .left .words .border{
+    border: 5px solid transparent;
+    border-top-color: #ccc;
+    height: 5px;
+    width: 5px;
+}
+
+.header button{
+    height: 30px;
+    width: 50px;
+    background:black;
+    border-radius: 4px;
+    margin-right: 50px;
+    border: 1px solid black;
+    outline: none;
+    color: #ccc;
+    cursor: pointer;
+}
+.header .opacity{
+    display: none;
+    height:150px;
+    width: 150px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #ccc;
+    position: absolute;
+    top: 60px;
+}
+.header .right .left .words span:hover{
+    color: #fff;
+    border-top-color: #fff;
+    
+}
+.header .right .left:hover .opacity{
+    display: block;
+}
+.header button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+.opacity ul {
+    list-style: none;
+}
+.opacity ul li{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px dashed black;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opacity ul li a{
+   
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    
+}
+.content{
+   height:calc(100%);
+   display: flex;
+}
+
+.leftbox{
+    background-color:rgba(0,0,0) ;
+    height: 100%;
+    width: 15%;  
+}
+.rightbox{
+    height: 100%;
+    width: 85%;
+}
+.leftbox ul{
+    list-style: none;
+    
+}
+.leftbox .box1 .box1child p{
+    background-color:rgba(255, 255, 255, 0.2) ;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+.leftbox .box1 .box1child p:hover{
+    background-color:rgba(255,255,255,0.3);
+    
+}
+.leftbox .box1 .box1child p.active{
+    background-color:rgba(255,255,255,0.3);
+}
+.leftbox .box1 .box1child  a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.leftbox .secondmenu li{
+    padding: 20px ;
+    background: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+.leftbox .box1 .box1child  .secondmenu li a{
+    font-size: 14px;
+    margin-right: 50px;
+}
+.leftbox .box1 .box1child  .secondmenu li.active{
+    border-left: 5px solid green;
+    background: rgba(255, 255, 255, 0.1);
+}
+.leftbox .box1 .box1child  .secondmenu li:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid green;
+}
+.displayed{
+    display: none;
+}
