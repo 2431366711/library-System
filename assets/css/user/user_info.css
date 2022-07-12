@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    background-color: #f2f3f5;
+    padding: 15px;
+}
+.layui-form-label{
+    width: 100px !important;
+}
+
+.layui-input-block{
+    width: 400px;
+}
